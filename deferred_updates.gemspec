@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 1.9.3"
 
   s.add_runtime_dependency "activerecord", ">= 3.2"
+  s.add_runtime_dependency "activerecord-import", ">= 3.2"
 
   s.add_development_dependency "connection_pool"
   s.add_development_dependency "redis", '>= 3.0'
