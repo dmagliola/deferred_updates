@@ -23,6 +23,8 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = ">= 1.9.3"
 
+  s.add_runtime_dependency "activerecord", ">= 3.2"
+
   s.add_development_dependency "bundler"
   s.add_development_dependency "rake"
 
@@ -32,6 +34,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "mocha"
   s.add_development_dependency "simplecov"
 
+  s.add_development_dependency "appraisal"
   s.add_development_dependency "coveralls"
   s.add_development_dependency "codeclimate-test-reporter"
 end

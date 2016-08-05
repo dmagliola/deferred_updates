@@ -175,7 +175,7 @@ Tested with [Travis](https://travis-ci.org/dmagliola/deferred_updates) using Rub
 To locally run tests do:
 
 ```
-rake test
+appraisal rake test
 ```
 
 ## Copyright
@@ -205,7 +205,8 @@ This gem is being used by:
 1. Code your thing
 1. Write and run tests:
         bundle install
-        rake test
+        appraisal
+        appraisal rake test
 1. Write documentation and make sure it looks good: yard server --reload
 1. Add items to the changelog, in README.
 1. Commit your changes (`git commit -am "Add some feature"`)
