@@ -27,6 +27,7 @@ GEM
     builder (3.0.4)
     codeclimate-test-reporter (0.6.0)
       simplecov (>= 0.7.1, < 1.0.0)
+    connection_pool (2.2.0)
     coveralls (0.8.15)
       json (>= 1.8, < 3)
       simplecov (~> 0.12.0)
@@ -47,6 +48,7 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.12.1)
     rake (11.2.2)
+    redis (3.3.1)
     ruby-progressbar (1.8.1)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
@@ -73,12 +75,14 @@ DEPENDENCIES
   appraisal
   bundler
   codeclimate-test-reporter
+  connection_pool
   coveralls
   deferred_updates!
   minitest
   minitest-reporters
   mocha
   rake
+  redis (>= 3.0)
   shoulda
   simplecov
 

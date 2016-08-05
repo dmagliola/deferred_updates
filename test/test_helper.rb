@@ -32,4 +32,21 @@ include ActiveSupport::Testing::Assertions
 
 require "benchmark"
 
+require "redis"
+require "connection_pool"
 require "deferred_updates"
+
+# Add helper methods to use in the tests
+$RedisConnectionSettings = {host: 'localhost', port: 6379, db: 2}
+
+class TestResetHelper
+  def self.reset_configuration
+    DeferredUpdates.instance_variable_set(:@configuration, DeferredUpdates::Configuration.new)
+    DeferredUpdates.configure do |config|
+      config.redis_connection_settings = $RedisConnectionSettings
+    end
+  end
+end
+
+TestResetHelper.reset_configuration
+

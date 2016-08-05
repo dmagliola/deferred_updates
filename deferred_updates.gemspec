@@ -25,6 +25,9 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "activerecord", ">= 3.2"
 
+  s.add_development_dependency "connection_pool"
+  s.add_development_dependency "redis", '>= 3.0'
+
   s.add_development_dependency "bundler"
   s.add_development_dependency "rake"
 
